@@ -2,7 +2,7 @@
 include 'header.php'; ?>
 <div class="container">
 <div class="row">
-    <div class="col">
+    <div class="col prose">
     <h1><?php the_title(); ?></h1>
     <hr class="mt-2 mb-4" />
     <?php if (have_posts()) {

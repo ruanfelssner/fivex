@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@prettier/plugin-php": "^0.22.2",
+    "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.20",
     "globals": "^15.9.0",
     "husky": "^8.0.3",
