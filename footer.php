@@ -5,7 +5,7 @@
             <div class="grid grid-cols-4 gap-4">
                 <div>
                     <a href="/">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgsimgs/logo.webp" alt="5 FIVEX Store" class="mb-3" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo.webp" alt="5 FIVEX Store" class="mb-3" />
                     </a>
                 </div>
                 <div>
@@ -39,7 +39,7 @@
         <div class="grid grid-cols-2 gap-4 text-center">
             <div>
                 <h1 class="mb-3">Formas de pagamento</h1>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgsimgs/payments.png" class="my-3 mx-auto" alt="Formas de pagamento" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/payments.png" class="my-3 mx-auto" alt="Formas de pagamento" />
                 <p>Parcele suas compras usando seu cartão de crédito e pague em até 10x sem juros</p>
             </div>
             <div class="grid grid-cols-2 gap-4 mb-4">
