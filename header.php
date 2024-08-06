@@ -11,9 +11,10 @@
       <div class="items-center justify-between w-full md:flex md:w-auto">
         <?php wp_nav_menu([
             'theme_location' => 'header-menu',
-            'container' => 'nav',
+            'container' => 'div',
             'container_class' => 'header-menu-class',
-            'menu_class' => 'menu flex flex-col md:flex-row md:space-x-6',
+            'menu_class' =>
+                'menu flex flex-col md:flex-row md:space-x-6 text-light',
             'menu_id' => 'primary-menu',
             'walker' => new WP_Bootstrap_Navwalker(),
         ]); ?>
