@@ -1,8 +1,22 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm prettier --write .
-pnpm run format:css
-pnpm build:css
+LOG_FILE="../log.txt"
 
-git add .
+{
+  echo "Starting Husky script execution..."
+
+  echo "Running Prettier..."
+  pnpm prettier --write . 2>&1
+
+  echo "Running format:css..."
+  pnpm run format:css 2>&1
+
+  echo "Building CSS..."
+  pnpm build:css 2>&1
+
+  echo "Adding changes to git..."
+  git add . 2>&1
+
+  echo "Husky script completed successfully."
+} > "$LOG_FILE" 2>&1
