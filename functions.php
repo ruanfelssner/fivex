@@ -23,8 +23,7 @@ function enqueue_swiper_slider()
     // Enfileirar o JS do Swiper
     wp_enqueue_script(
         'swiper-js',
-        get_template_directory_uri() .
-            '/in/swiper/swiper-element-bundle.min.js',
+        get_template_directory_uri() . '/in/swiper/swiper-bundle.min.js',
         [],
         null,
         true
