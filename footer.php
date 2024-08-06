@@ -2,7 +2,7 @@
     
     <section class="bottomFooter bg-[rgba(255,255,255,0.1)] py-16">
         <div class="container">
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div>
                     <a href="/">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo.webp" alt="5 FIVEX Store" class="mb-3" />
