@@ -49,4 +49,7 @@ header {
       @apply h-full w-full object-cover;
     }
   }
+  .swiper-button-next {
+    @apply text-white;
+  }
 }
