@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 <body <?php body_class(); ?>>
-  <header class="bg-black text-light">
+  <header>
   <nav class="container">
     <div class="flex flex-wrap items-center justify-between mx-auto p-2">
       <a href="<?php echo esc_url(
@@ -25,15 +25,10 @@
             'theme_location' => 'header-menu',
             'container' => 'div',
             'container_class' => 'header-menu-class',
-            'menu_class' =>
-                'menu flex flex-col md:flex-row md:space-x-6 text-light',
+            'menu_class' => 'menu flex flex-col md:flex-row md:space-x-6',
             'menu_id' => 'primary-menu',
             'walker' => new WP_Bootstrap_Navwalker(),
         ]); ?>
-        <div class="hidden md:block">
-          <button @click="openMenu()" class="mr-6"><button icon="cart-shopping" /></button>
-          <button @click="openMenu()" class=""><button icon="bars" /></button>
-        </div>
       </div>
     </div>
   </nav>
