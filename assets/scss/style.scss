@@ -1,6 +1,7 @@
-
 /* Theme Name: Five X */
+
 /* Theme URI: http://www.5fivexbrasil.com */
+
 /* Description: Five X - Theme Wordpress */
 
 @tailwind base;
@@ -8,11 +9,13 @@
 @tailwind utilities;
 
 .container {
-    @apply mx-auto px-4 max-w-[1440px];
+  @apply mx-auto max-w-[1440px] px-4;
 }
+
 .row {
-    @apply flex flex-wrap -mx-4;
+  @apply -mx-4 flex flex-wrap;
 }
+
 .col {
-    @apply w-full lg:w-1/2 px-4;
+  @apply w-full px-4 lg:w-1/2;
 }

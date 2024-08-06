@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+pnpm prettier --write .
+pnpm run format:css
 pnpm build:css
 
 git add .
