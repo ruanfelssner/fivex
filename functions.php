@@ -1,5 +1,5 @@
 <?php
-// disabled the admin bar
+// Desabilitar a barra de administração
 add_filter('show_admin_bar', '__return_false');
 
 function register_my_menus()
@@ -11,6 +11,7 @@ function register_my_menus()
 add_action('init', 'register_my_menus');
 
 require_once get_template_directory() . '/in/class-wp-bootstrap-navwalker.php';
+
 function enqueue_swiper_slider()
 {
     // Enfileirar o CSS do Swiper
@@ -29,6 +30,7 @@ function enqueue_swiper_slider()
         true
     );
 
+    // Enfileirar o JS de inicialização do Swiper
     wp_enqueue_script(
         'init-swiper-js',
         get_template_directory_uri() . '/in/swiper/init.js',
@@ -39,4 +41,3 @@ function enqueue_swiper_slider()
 }
 add_action('wp_enqueue_scripts', 'enqueue_swiper_slider');
 ?>
-

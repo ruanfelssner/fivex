@@ -11,5 +11,12 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
      </div>
+     <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Sobre</h1>
+            </div>
+        </div>
+     </div>
     <?php } ?>
     <?php include 'footer.php'; ?>
