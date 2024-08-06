@@ -1,5 +1,5 @@
-<header>
-  <nav class="bg-white border-gray-200">
+<header class="bg-black text-white">
+  <nav class="container">
       <div class="flex flex-wrap items-center justify-between mx-auto p-2">
       <router-link to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo.webp" alt="5 FIVEX Store" class="mb-3" />

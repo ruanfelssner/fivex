@@ -31,35 +31,13 @@
                     <h3 class="mb-2"><a href="tel:4133333333">(41) 3333-3333</a></h3>
                     <p>(Ligações de qualquer origem <br />Cobrança de Acordo com Operadora)</p>
                 </div>
-</div>            
+            </div>            
         </div>
     </section>
-    <section class="topFooter py-10">
-        <div class="container">
-        <div class="grid grid-cols-2 gap-4 text-center">
-            <div>
-                <h1 class="mb-3">Formas de pagamento</h1>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/payments.png" class="my-3 mx-auto" alt="Formas de pagamento" />
-                <p>Parcele suas compras usando seu cartão de crédito e pague em até 10x sem juros</p>
-            </div>
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <div>
-                    <h1 class="mb-3">Segurança</h1>
-                </div>
-                <div>
-                    <h1 class="mb-3">Redes Sociais</h1>
-                    <AtomsButton icon="facebook-f" size="lg" prefix="fab" />
-                    <AtomsButton class="mx-2" icon="instagram" size="lg" prefix="fab" />
-                    <AtomsButton icon="youtube" size="lg" prefix="fab" />
-                </div>
-            </div>
-        </div>          
-    </div>
-    </section>
-    <section class="bottomFooter bg-[rgba(255,255,255,0.1)] py-6">
+    <section class="bottomFooter py-6">
         <div class="container">
             <div class="text-center">
-                <p>Todos direitos reservados a <strong>5 FIVEX Store</strong> - Pneu de Qualidade <strong>19.836.669/0001-46</strong></p>
+                <p>Todos direitos reservados a <strong>5 FIVEX</strong> - Pneu de Qualidade <strong>19.836.669/0001-46</strong></p>
             </div>            
         </div>
     </section>
