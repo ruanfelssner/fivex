@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "sass --watch assets/scss:./"
+    "build:css": "npx postcss assets/scss/style.scss -o ./style.css",
+    "watch:css": "chokidar 'assets/scss/*.scss' -c 'npm run build:css'"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.77.8"
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.7"
   }
 }

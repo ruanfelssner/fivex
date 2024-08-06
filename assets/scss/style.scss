@@ -3,7 +3,9 @@
 /* Theme URI: http://www.5fivexbrasil.com */
 /* Description: Five X - Theme Wordpress */
 
-@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .container {
     @apply mx-auto px-4 max-w-[1440px];
