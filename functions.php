@@ -9,5 +9,7 @@ function register_my_menus()
     ]);
 }
 add_action('init', 'register_my_menus');
+
+require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 ?>
 
