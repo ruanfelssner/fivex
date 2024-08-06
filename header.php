@@ -1,4 +1,4 @@
-<header class="bg-black">
+<header class="bg-black text-light">
   <nav class="container">
     <div class="flex flex-wrap items-center justify-between mx-auto p-2">
       <a href="<?php echo esc_url(
@@ -10,13 +10,12 @@
       </a>
       <div class="items-center justify-between w-full md:flex md:w-auto">
         <?php wp_nav_menu([
-            'theme_location' => 'primary-menu', // Nome da localização registrada
-            'container' => 'div', // O elemento HTML que envolve o menu
-            'container_class' =>
-                'flex flex-col p-4 mt-4 font-medium md:flex-row md:space-x-6', // Classes CSS para o container
-            'menu_class' => 'menu flex flex-col md:flex-row md:space-x-6', // Classes CSS para a lista do menu
-            'menu_id' => 'primary-menu', // ID para a lista do menu
-            'walker' => new WP_Bootstrap_Navwalker(), // Se você estiver usando um walker personalizado
+            'theme_location' => 'header-menu',
+            'container' => 'nav',
+            'container_class' => 'header-menu-class',
+            'menu_class' => 'menu flex flex-col md:flex-row md:space-x-6',
+            'menu_id' => 'primary-menu',
+            'walker' => new WP_Bootstrap_Navwalker(),
         ]); ?>
         <div class="hidden md:block">
           <button @click="openMenu()" class="mr-6"><button icon="cart-shopping" /></button>
