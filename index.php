@@ -1,7 +1,7 @@
 
     <?php include 'header.php'; ?>
     <?php if (is_front_page() || is_home()) { ?>
-    <div class="swiper-container relative">
+    <div class="swiper-container">
         <div class="swiper-wrapper">
         <div class="swiper-slide">
             <img src="<?php echo esc_url(

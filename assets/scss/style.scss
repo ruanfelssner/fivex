@@ -19,3 +19,12 @@
 .col {
   @apply w-full px-4;
 }
+
+.swiper-container {
+  @apply relative bg-black;
+  .swiper-slide {
+    img {
+      @apply h-full w-full object-cover;
+    }
+  }
+}
