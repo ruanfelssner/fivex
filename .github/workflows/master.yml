@@ -1,0 +1,24 @@
+name: Deploy via FTP
+
+on:
+  push:
+    branches:
+      - master  # ou o branch que você deseja usar para o deploy
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: Prod
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Deploy to FTP server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:        
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: /
+        server-dir	: /public_html/wp-content/themes/fivex
