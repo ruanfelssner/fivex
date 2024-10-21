@@ -103,7 +103,9 @@
             <div class="swiper-container h-[500px]">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide flex justify-center">
-                        <video class="swiper-video" controls>
+                        <video class="swiper-video" controls preload="none" poster="<?php echo esc_url(
+                            get_template_directory_uri()
+                        ); ?>/assets/videos/1-ano-fivex.jpg">
                             <source src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/videos/1-ano-fivex.mp4" type="video/mp4">
@@ -111,7 +113,9 @@
                         </video>
                     </div>
                     <div class="swiper-slide flex justify-center">
-                        <video class="swiper-video" controls>
+                        <video class="swiper-video" controls preload="none" poster="<?php echo esc_url(
+                            get_template_directory_uri()
+                        ); ?>/assets/videos/1-ano-fivex-2.jpg" >
                             <source src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/videos/1-ano-fivex-2.mp4" type="video/mp4">
@@ -119,7 +123,9 @@
                         </video>
                     </div>
                     <div class="swiper-slide flex justify-center">
-                        <video class="swiper-video" controls>
+                        <video class="swiper-video" controls preload="none" poster="<?php echo esc_url(
+                            get_template_directory_uri()
+                        ); ?>/assets/videos/1-ano-fivex-3.jpg" >
                             <source src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/videos/1-ano-fivex-3.mp4" type="video/mp4">
