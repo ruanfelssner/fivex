@@ -1,0 +1,12 @@
+{
+  "name": "5 Five X Brasil",
+  "host": "#",
+  "protocol": "ftp",
+  "port": 21,
+  "username": "#",
+  "password": "#",
+  "remotePath": "/public_html/wp-content/themes/fivex",
+  "uploadOnSave": true,
+  "useTempFile": false,
+  "openSsh": false
+}

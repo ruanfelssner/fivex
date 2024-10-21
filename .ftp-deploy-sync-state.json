@@ -1,0 +1,179 @@
+{
+  "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+  "version": "1.0.0",
+  "generatedTime": 1722948480915,
+  "data": [
+    {
+      "type": "folder",
+      "name": ".husky"
+    },
+    {
+      "type": "file",
+      "name": ".prettierrc",
+      "size": 183,
+      "hash": "278ac77aad7a0ed2f926bdf47c18bf8b8ff8042b85b0e53a77b2fb7b3822b9b4"
+    },
+    {
+      "type": "file",
+      "name": ".prettierignore",
+      "size": 32,
+      "hash": "16e8b8b5b6527a65b4494e4b687eb3b4966b279c657626fbe383c5347c7f8d8f"
+    },
+    {
+      "type": "folder",
+      "name": "assets"
+    },
+    {
+      "type": "file",
+      "name": "footer.php",
+      "size": 1994,
+      "hash": "a2843f638b9b0b5f4b770dc7ea4185a42cb27e56d0e5a92860edf8e3210d9eff"
+    },
+    {
+      "type": "file",
+      "name": "functions.php",
+      "size": 1006,
+      "hash": "81171a47de07af418f988323052448e26fb66112b640d7e255155afd437efe50"
+    },
+    {
+      "type": "file",
+      "name": "header.php",
+      "size": 1278,
+      "hash": "244af825a3fb39e3bf807924b2bc844602aba8c6f1949cd82581d11d898eb9d8"
+    },
+    {
+      "type": "folder",
+      "name": "in"
+    },
+    {
+      "type": "file",
+      "name": "index.php",
+      "size": 1520,
+      "hash": "0dadbc65f57fa0876cf2c738f55a41eb66e24a49c5644a7951e49b979ba879ca"
+    },
+    {
+      "type": "file",
+      "name": "package.json",
+      "size": 689,
+      "hash": "a1679ae1fa42bcaf35b22a812a0c7f1d02fad61cfb032395748f092bf914f67c"
+    },
+    {
+      "type": "file",
+      "name": "page.php",
+      "size": 352,
+      "hash": "b08b61eb5f693d2824a643afd170ae7539e24f359bf7777e7250b8e0e124ff1c"
+    },
+    {
+      "type": "file",
+      "name": "pnpm-lock.yaml",
+      "size": 53749,
+      "hash": "9c00bde48549114bf60e6fdba4b1afcb658798c167d65b6adce16ca975af4797"
+    },
+    {
+      "type": "file",
+      "name": "postcss.config.js",
+      "size": 83,
+      "hash": "234aaef632ee34080b46a090d78f4b39b5cbe03cdb15190ccbc43d42f001d366"
+    },
+    {
+      "type": "file",
+      "name": "readme.md",
+      "size": 2248,
+      "hash": "cc5ee1fd9ade602c8614410e9228cf915895c2d7ef9f05a6569b949ff26829eb"
+    },
+    {
+      "type": "file",
+      "name": "screenshot.png",
+      "size": 7781,
+      "hash": "6b7bf74dfa6fcd34fef20f9c0ef7c375ea07f5dedce0b5b3fea9a4a596b3f5cd"
+    },
+    {
+      "type": "file",
+      "name": "style.css",
+      "size": 28725,
+      "hash": "b7643cf6d2ce32396a53826634891cb31e9f66c75fe4a5a45d12ed107306edfd"
+    },
+    {
+      "type": "file",
+      "name": "tailwind.config.js",
+      "size": 858,
+      "hash": "3100b5e84a6fc8e3ba12e99708179e2937f65c76c101c96d0db29fcd034f31d6"
+    },
+    {
+      "type": "file",
+      "name": ".husky/pre-commit",
+      "size": 406,
+      "hash": "c451cb5cb39171d72d7dfe18bf6984eee915d3b3ecac33037ad6d18a7cdda64c"
+    },
+    {
+      "type": "folder",
+      "name": "assets/imgs"
+    },
+    {
+      "type": "folder",
+      "name": "assets/scss"
+    },
+    {
+      "type": "folder",
+      "name": "in/swiper"
+    },
+    {
+      "type": "file",
+      "name": "in/class-wp-bootstrap-navwalker.php",
+      "size": 29297,
+      "hash": "60a61e71cc519d326a5fdf34c03c72d0b6be6cd1195d9d5502d9cabc0ef4002d"
+    },
+    {
+      "type": "file",
+      "name": "assets/imgs/logo.webp",
+      "size": 8590,
+      "hash": "7965908e10c3301838e6bf30b408bec51cf91c82d09f42b487907b87e1b561a8"
+    },
+    {
+      "type": "folder",
+      "name": "assets/imgs/slides"
+    },
+    {
+      "type": "file",
+      "name": "in/swiper/init.js",
+      "size": 312,
+      "hash": "f9c0d9431f498fee453076620b1e385f785dfc917ec1c5f93d9a191ad1f55c5f"
+    },
+    {
+      "type": "file",
+      "name": "assets/scss/style.scss",
+      "size": 956,
+      "hash": "043c07f9a8bd7963189d478bd9da8e491d65832a404016ee4bd1d7a7f468ac8b"
+    },
+    {
+      "type": "file",
+      "name": "in/swiper/swiper-bundle.min.css",
+      "size": 20733,
+      "hash": "19be5ff1788a344c45f4e56ff8961879ad01473229264da9567041f610e68e57"
+    },
+    {
+      "type": "file",
+      "name": "in/swiper/swiper-bundle.min.js",
+      "size": 254686,
+      "hash": "a2b8a457d78fdbc2d042b52a8bf66affe319ac7c70a0bea772bc8b51b82d0950"
+    },
+    {
+      "type": "file",
+      "name": "assets/imgs/slides/01.webp",
+      "size": 213634,
+      "hash": "323e46345c4b358b719c4103333a0731cb34d889d85f007f8e5eb626f8e5990e"
+    },
+    {
+      "type": "file",
+      "name": "assets/imgs/slides/02.webp",
+      "size": 125976,
+      "hash": "8436d0e932c71840f727718cc3841b20d42c86447a4cd9c1b51d7195e462b5e3"
+    },
+    {
+      "type": "file",
+      "name": "assets/imgs/slides/03.webp",
+      "size": 133328,
+      "hash": "a4b7f06ab5bc9ec9de83ec5d7a0a5f1fc7fcb0b8b10e341d61fb36dd05bf9fb5"
+    }
+  ]
+}

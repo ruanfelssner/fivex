@@ -39,4 +39,39 @@ function enqueue_swiper_slider()
     );
 }
 add_action('wp_enqueue_scripts', 'enqueue_swiper_slider');
+
+function add_additional_class_on_a($classes, $item, $args)
+{
+    if (isset($args->add_a_class)) {
+        $classes['class'] = $args->add_a_class;
+    }
+    return $classes;
+}
+
+add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
+
+function custom_excerpt_length($length)
+{
+    return 12;
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 999);
+
+add_action('widgets_init', 'my_register_sidebars');
+
+function my_register_sidebars()
+{
+    /* Register dynamic sidebar 'new_sidebar' */
+
+    register_sidebar([
+        'id' => 'sidebar',
+        'name' => __('Sidebar'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ]);
+
+    /* Repeat the code pattern above for additional sidebars. */
+}
+
 ?>

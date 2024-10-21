@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:css": "npx postcss assets/scss/style.scss -o ./style.css",
-    "prepare": "husky install",
-    "format:css": "prettier --write assets/scss/*.scss"
+    "watch:css": "npx tailwindcss -i ./assets/scss/style.scss -o ./style.css --watch",
+    "format:css": "prettier --write assets/scss/*.scss",
+    "prepare": "husky install"
   },
   "author": "Ruan Felssner",
   "license": "ISC",

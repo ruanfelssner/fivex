@@ -3,31 +3,38 @@ module.exports = {
   content: ['./**/*.php'],
   theme: {
     extend: {
+      colors: {
+        primary: '#fff100',
+        secondary: '#2d3748',
+        accent: '#f6ad55',
+        dark: '#2d3748',
+        light: '#f7fafc',
+      },
       typography: {
         DEFAULT: {
           css: {
-            color: '#333',
+            color: '#000',
             h1: {
-              color: '#111',
+              color: '#000',
               fontWeight: '700',
             },
             h2: {
-              color: '#222',
+              color: '#000',
               fontWeight: '600',
             },
             h3: {
-              color: '#333',
+              color: '#000',
               fontWeight: '500',
             },
             p: {
-              color: '#555',
+              color: '#000',
               lineHeight: '1.7',
             },
             a: {
-              color: '#1a202c',
+              color: '#fff100',
               textDecoration: 'underline',
               '&:hover': {
-                color: '#2d3748',
+                color: '#f6ad55',
               },
             },
           },

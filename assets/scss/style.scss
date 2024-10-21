@@ -27,19 +27,8 @@ body {
   @apply w-full px-4;
 }
 
-header {
-  @apply bg-black;
-  .header-menu-class {
-    .menu-item {
-      @apply inline-block px-4 py-2;
-      .nav-link {
-        @apply text-white;
-        &:hover {
-          @apply text-red-500;
-        }
-      }
-    }
-  }
+.btn {
+  @apply rounded-sm bg-primary px-4 py-2 text-secondary no-underline hover:text-black hover:opacity-75;
 }
 
 .swiper-container {
@@ -48,8 +37,53 @@ header {
     img {
       @apply h-full w-full object-cover;
     }
+    video {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
   }
-  .swiper-button-next {
-    @apply text-white;
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply h-[40px] w-[40px] rounded-sm bg-black/[.50] p-2 text-white;
+    &&:after {
+      @apply text-lg;
+    }
+    &:hover {
+      @apply bg-black;
+    }
+  }
+}
+
+.feature {
+  .card {
+    img {
+      transition: all 1s;
+    }
+    &:hover {
+      img {
+        box-shadow: 2px 2px 3px #000;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.prose {
+  h2 {
+    @apply my-2;
+  }
+}
+
+form {
+  input,
+  textarea {
+    @apply my-2 w-full rounded-lg border border-gray-300 p-2;
+  }
+  textarea {
+    @apply h-32;
+  }
+  .wpcf7-submit {
+    @apply rounded-lg bg-primary px-4 py-2 text-secondary no-underline hover:text-black hover:opacity-75;
   }
 }
