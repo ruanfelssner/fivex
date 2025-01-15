@@ -1,16 +1,16 @@
 <?php
 // Desabilitar a barra de administração
 add_filter('show_admin_bar', '__return_false');
-
-function register_my_menus()
-{
-    register_nav_menus([
-        'header-menu' => __('Header Menu'),
-    ]);
-}
-add_action('init', 'register_my_menus');
+add_theme_support('post-thumbnails');
 
 require_once get_template_directory() . '/in/class-wp-bootstrap-navwalker.php';
+
+function exclude_category_from_blog($query) {
+    if (is_home() || is_archive()) {
+        $query->set('cat', '-132');
+    }
+}
+add_action('pre_get_posts', 'exclude_category_from_blog');
 
 function enqueue_swiper_slider()
 {
@@ -52,7 +52,7 @@ add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
 
 function custom_excerpt_length($length)
 {
-    return 12;
+    return 10;
 }
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
@@ -60,8 +60,6 @@ add_action('widgets_init', 'my_register_sidebars');
 
 function my_register_sidebars()
 {
-    /* Register dynamic sidebar 'new_sidebar' */
-
     register_sidebar([
         'id' => 'sidebar',
         'name' => __('Sidebar'),
@@ -70,8 +68,8 @@ function my_register_sidebars()
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ]);
-
-    /* Repeat the code pattern above for additional sidebars. */
 }
+
+add_filter('wpcf7_autop_or_not', '__return_false');
 
 ?>

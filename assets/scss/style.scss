@@ -31,39 +31,86 @@ body {
   @apply rounded-sm bg-primary px-4 py-2 text-secondary no-underline hover:text-black hover:opacity-75;
 }
 
-.swiper-container {
-  @apply relative bg-black;
-  .swiper-slide {
-    img {
-      @apply h-full w-full object-cover;
-    }
-    video {
-      height: 100%;
-      width: auto;
-      object-fit: cover;
+.swiper-container,
+.swiper-products {
+  @apply relative;
+
+  &.banner {
+    @apply bg-black;
+
+    .swiper-slide {
+      img {
+        @apply h-full w-full object-cover;
+      }
+
+      video {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+      }
     }
   }
+
   .swiper-button-next,
   .swiper-button-prev {
-    @apply h-[40px] w-[40px] rounded-sm bg-black/[.50] p-2 text-white;
+    @apply top-[50%] h-[40px] w-[40px] rounded-sm bg-black/[.50] p-2 text-white;
+
     &&:after {
       @apply text-lg;
     }
+
     &:hover {
       @apply bg-black;
     }
   }
 }
 
+.garantia {
+  background-image: url('https://www.5fivexbrasil.com/wp-content/themes/fivex/assets/imgs/garantia.jpg');
+
+  .line {
+    width: 780px;
+    height: 100%;
+    display: block;
+    border: solid 5px #fff;
+    border-color: #fff transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    position: absolute;
+    left: 0;
+    top: 390px;
+    z-index: 2;
+    transform: rotate(90deg);
+  }
+
+  .bg {
+    @apply bg-black/80;
+    color: #fff;
+  }
+
+  p {
+    @apply max-w-[700px] text-base;
+  }
+}
+
 .feature {
   .card {
-    img {
-      transition: all 1s;
-    }
-    &:hover {
+    .thumbnail {
+      @apply block h-[150px] overflow-hidden;
+
       img {
-        box-shadow: 2px 2px 3px #000;
-        transform: scale(1.1);
+        transition: all 0.5s;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .description {
+      p {
+        @apply mb-4 mt-2 text-sm;
       }
     }
   }
@@ -80,9 +127,11 @@ form {
   textarea {
     @apply my-2 w-full rounded-lg border border-gray-300 p-2;
   }
+
   textarea {
     @apply h-32;
   }
+
   .wpcf7-submit {
     @apply rounded-lg bg-primary px-4 py-2 text-secondary no-underline hover:text-black hover:opacity-75;
   }
@@ -90,4 +139,114 @@ form {
 
 .wp-block-heading {
   @apply text-2xl font-bold text-white;
+}
+
+.localizacao {
+  background-image: url('https://www.5fivexbrasil.com/wp-content/themes/fivex/assets/imgs/localizacao.jpg');
+
+  .bg {
+    @apply bg-black/80 text-white;
+  }
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  /* Espaço entre os campos */
+}
+
+.form-col {
+  flex: 1;
+  /* Faz os campos terem o mesmo tamanho */
+}
+
+.form-col label {
+  display: block;
+  margin-bottom: 5px;
+  /* Espaço entre o texto e o campo */
+}
+
+.swiper-products {
+  .card {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.sobre {
+  .thumb {
+    img {
+      @apply w-full;
+    }
+  }
+
+  h1 {
+    @apply text-4xl !text-primary;
+    font-weight: bold;
+    margin: 1rem 0;
+
+    &::after {
+      @apply mt-2 block h-[2px] w-32 bg-primary;
+      content: '';
+    }
+  }
+
+  p {
+    @apply mb-8 !text-white;
+  }
+
+  a {
+    @apply w-fit rounded-md border-2 border-white px-4 py-2 text-white no-underline;
+  }
+}
+
+#menu {
+  @apply bg-transparent py-6 transition-all;
+
+  a {
+    @apply justify-center text-sm tracking-widest;
+
+    span {
+      @apply relative inline-block;
+
+      &::after {
+        @apply absolute bottom-[-5px] left-0 h-[2px] w-0 bg-white transition-all duration-300;
+        content: '';
+      }
+    }
+
+    &:hover span::after {
+      @apply w-full;
+    }
+  }
+
+  .logo {
+    @apply h-[90px];
+  }
+
+  &.off {
+    @apply bg-black/70 py-2;
+
+    .logo {
+      @apply mx-auto h-[50px];
+    }
+  }
+}
+
+.page-template-default,
+.blog,
+.single,
+.archive,
+.category,
+.search,
+.error404 {
+  #menu {
+    @apply bg-black/70 py-2;
+
+    .logo {
+      @apply mx-auto h-[50px];
+    }
+  }
 }

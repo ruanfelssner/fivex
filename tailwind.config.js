@@ -8,7 +8,7 @@ module.exports = {
         secondary: '#2d3748',
         accent: '#f6ad55',
         dark: '#2d3748',
-        light: '#f7fafc',
+        light: '#f7fafc'
       },
       typography: {
         DEFAULT: {
@@ -16,31 +16,31 @@ module.exports = {
             color: '#000',
             h1: {
               color: '#000',
-              fontWeight: '700',
+              fontWeight: '700'
             },
             h2: {
               color: '#000',
-              fontWeight: '600',
+              fontWeight: '600'
             },
             h3: {
               color: '#000',
-              fontWeight: '500',
+              fontWeight: '500'
             },
             p: {
               color: '#000',
-              lineHeight: '1.7',
+              lineHeight: '1.7'
             },
             a: {
               color: '#fff100',
               textDecoration: 'underline',
               '&:hover': {
-                color: '#f6ad55',
-              },
-            },
-          },
-        },
-      },
-    },
+                color: '#f6ad55'
+              }
+            }
+          }
+        }
+      }
+    }
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography')]
 }
