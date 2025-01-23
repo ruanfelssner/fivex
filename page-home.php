@@ -17,11 +17,11 @@ include 'header.php';
                     </video>
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides/banner-01.jpg" class="object-cover hidden md:block" alt="" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides/slide-01.jpg" class="object-cover hidden md:block" alt="" />
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides-mobile/mobile-01.jpg" class="object-cover block md:hidden" alt="" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides/banner-02.jpg" class="object-cover hidden md:block" alt="" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides/slide-02.jpg" class="object-cover hidden md:block" alt="" />
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides-mobile/mobile-02.jpg" class="object-cover block md:hidden" alt="" />
                 </div>
             </div>
