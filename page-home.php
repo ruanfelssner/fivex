@@ -11,9 +11,11 @@ include 'header.php';
         <div class="swiper-container h-full banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <video class="swiper-video !w-full" autoplay muted loop playsinline>
-                        <source src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides/video-apresentacao.mp4" type="video/mp4">
-                        Seu navegador não suporta o vídeo.
+                    <video class="swiper-video !w-full hidden md:block" autoplay muted loop playsinline>
+                        <source src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides/slide-desktop.mp4" type="video/mp4">
+                    </video>
+                    <video class="swiper-video !w-full block md:hidden" autoplay muted loop playsinline>
+                        <source src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/slides/slide-mobile.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="swiper-slide">
