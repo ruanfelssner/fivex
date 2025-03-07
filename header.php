@@ -16,7 +16,7 @@
                 <a href="https://www.loja.5fivexbrasil.com/" target="_blank" class="text-primary hidden lg:flex"><span>Loja Virtual</span></a>
                 <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/assets/imgs/logo.png" alt="5 FIVEX Store" class="logo" /></a>
                 <a href="<?php echo esc_url(home_url('/blog')); ?>" class="text-primary hidden lg:flex"><span>Blog</span></a>
-                <div class="flex gap-2 h-[39px] items-center justify-center hidden lg:flex">
+                <div class="gap-2 h-[39px] items-center justify-center hidden lg:flex">
                     <a href="<?php echo esc_url(home_url('/contato'),); ?>" class="text-primary me-4"><span>Contato</span></a>
                     <a href="https://www.facebook.com/share/8oPAN2Vx1PXFgLWv/" target="_blank" class="text-primary w-[35px] h-[35px] hover:opacity-80"><img src="<?php echo esc_url(  get_template_directory_uri(),); ?>/assets/imgs/icon-facebook.png" /></a>
                     <a href="https://www.instagram.com/5fivex_brasil/" target="_blank" class="text-primary w-[35px] h-[35px] hover:opacity-80"><img src="<?php echo esc_url( get_template_directory_uri(), ); ?>/assets/imgs/icon-instagram.png" /></a>
