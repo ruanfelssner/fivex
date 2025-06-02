@@ -13,7 +13,7 @@
 		<div class="container flex items-center justify-between">
             <div class="grid lg:grid-cols-5 justify-between gap-4 items-center text-center font-bold uppercase w-full">
                 <a href="<?php echo esc_url(home_url('/sobre')); ?>" class="text-primary hidden lg:flex"><span>Sobre nós</span></a>
-                <a href="https://www.loja.5fivexbrasil.com/" target="_blank" class="text-primary hidden lg:flex"><span>Loja Virtual</span></a>
+                <a href="https://www.mercadolivre.com.br/pagina/5fivex" target="_blank" class="text-primary hidden lg:flex"><span>Loja Virtual</span></a>
                 <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/assets/imgs/logo.png" alt="5 FIVEX Store" class="logo" /></a>
                 <a href="<?php echo esc_url(home_url('/blog')); ?>" class="text-primary hidden lg:flex"><span>Blog</span></a>
                 <div class="gap-2 h-[39px] items-center justify-center hidden lg:flex">
